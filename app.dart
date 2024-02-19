@@ -30,8 +30,7 @@ void main() {
 //Function that return a random number
 int ranNumGen() {
   Random random = Random();
-  int ran = random.nextInt(100) + 1;
-  return ran;
+  return random.nextInt(100) + 1;
 }
 
 //Function to check user input
