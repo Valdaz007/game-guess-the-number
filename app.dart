@@ -1,5 +1,5 @@
-import 'dart:io';
-import 'dart:math';
+import 'dart:io'; //For User Input
+import 'dart:math'; //For Getting Random Number
 
 void main() {
 
@@ -27,12 +27,14 @@ void main() {
   }
 }
 
+//Function that return a random number
 int ranNumGen() {
   Random random = Random();
   int ran = random.nextInt(100) + 1;
   return ran;
 }
 
+//Function to check user input
 bool checkGuess(int ran) {
   String? guess = stdin.readLineSync();
   int intGuess = 0;
